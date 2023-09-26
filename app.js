@@ -24,7 +24,6 @@ if (countryValue == "" && cityValue == "") {
       return response.json();
     })
     .then((full) => {
-      console.log(full);
       date.innerHTML = full.data.date.readable;
       city.innerHTML = full.data.meta.timezone;
       fajrTime.innerHTML = full.data.timings.Fajr;
