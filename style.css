@@ -129,6 +129,12 @@ body {
   font-size: larger;
   color: rgb(109, 86, 255);
 }
+.container .app .prayer-times .location span {
+  margin-left: 10px;
+  font-size: 30px;
+  font-weight: 600;
+  color: #230060;
+}
 .container .app .prayer-times .prayer {
   display: flex;
   justify-content: space-between;
