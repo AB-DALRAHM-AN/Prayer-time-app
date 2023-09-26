@@ -1,0 +1,244 @@
+@import url('https://fonts.googleapis.com/css2?family=ADLaM+Display&family=Inclusive+Sans&family=Mooli&family=Poppins:wght@100;200;300;400;500;600;700;800&family=Roboto:wght@100;300;400;500;700;900&family=Rubik&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: 'Mooli', sans-serif;
+  background-color: #f5f5f5;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 40px;
+  margin: 0;
+  background-color: rgb(42, 0, 133);
+}
+.container .app {
+  width: 100%;
+  max-width: 800px;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  background-color: #fff;
+  left: -10px;
+  margin: 10px 0;
+  border-radius: 10px;
+  flex: 1;
+  padding: 20px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+}
+.container .app .header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+.container .app .title {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  margin: 10px 0 30px;
+  color: #230060;
+  line-height: 1;
+  z-index: 1;
+}
+.container .app .s1 {
+  font-size: 40px;
+  font-weight: 700;
+}
+.container .app .s2 {
+  font-size: 60px;
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+.container .app .s3 {
+  width: fit-content;
+  font-size: 40px;
+  font-weight: 700;
+  margin-left: 70px;
+  border-bottom: solid 3px #230060;
+}
+.container .app .image img {
+  width: 300px;
+}
+.container .app input {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #2300603f;
+  border-radius: 5px;
+  margin-bottom: 20px;
+  outline: none;
+  transition: all 0.3s ease-in-out;
+  -webkit-transition: all 0.3s ease-in-out;
+  -moz-transition: all 0.3s ease-in-out;
+  -ms-transition: all 0.3s ease-in-out;
+  -o-transition: all 0.3s ease-in-out;
+}
+.container .app input:focus {
+  border-color: rgb(109, 86, 255);
+}
+.container .app input::placeholder {
+  color: #2300609a;
+  font-size: 15px;
+}
+
+.container .app button {
+  width: 100%;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  background-color: rgb(109, 86, 255);
+  color: #fff;
+  font-weight: bold;
+  font-size: 18px;
+  font-weight: 500;
+  cursor: pointer;
+  outline: none;
+  transition: all 0.3s ease-in-out;
+  -webkit-transition: all 0.3s ease-in-out;
+  -moz-transition: all 0.3s ease-in-out;
+  -ms-transition: all 0.3s ease-in-out;
+  -o-transition: all 0.3s ease-in-out;
+}
+.container .app button:hover {
+  background-color: rgb(109, 86, 255);
+  box-shadow: 0 0 10px rgb(109, 86, 255);
+}
+.container .app .prayer-times {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  flex: 1;
+}
+.container .app .prayer-times .location {
+  align-items: center;
+  padding: 10px;
+  color: #230060;
+  margin: 40px 0 20px;
+  font-size: 30px;
+}
+.container .app .prayer-times .location i {
+  margin-right: 10px;
+  color: rgb(109, 86, 255);
+}
+.container .app .prayer-times .prayer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  color: #fff;
+  border-radius: 5px;
+  background-color: rgb(109, 86, 255);
+  margin-bottom: 10px;
+}
+.container .app .prayer-times .prayer:hover {
+  background-color: rgb(109, 86, 255);
+  box-shadow: 0 0 10px rgb(109, 86, 255);
+}
+.container .app .prayer-times .date {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  color: #fff;
+  border-radius: 8px;
+  background-color: rgba(106, 86, 255, 0.749);
+  margin-bottom: 10px;
+  -webkit-border-radius: 8px;
+  -moz-border-radius: 8px;
+  -ms-border-radius: 8px;
+  -o-border-radius: 8px;
+}
+/* media */
+@media (max-width: 626px) {
+  .container .app .s1 {
+    font-size: 30px;
+  }
+  .container .app .s2 {
+    font-size: 50px;
+  }
+  .container .app .s3 {
+    font-size: 30px;
+    margin-left: 50px;
+  }
+  .container .app .title {
+    margin: 20px 0;
+  }
+  .container .app .prayer-times .location {
+    margin: 20px 0 10px;
+    font-size: 20px;
+  }
+  .container .app .prayer-times .prayer {
+    margin-bottom: 5px;
+  }
+  .container .app .prayer-times .date {
+    margin-bottom: 5px;
+  }
+  .container .app .image img {
+    width: 200px;
+  }
+}
+@media (max-width: 490px) {
+  .container .app .s1 {
+    font-size: 25px;
+  }
+  .container .app .s2 {
+    font-size: 40px;
+  }
+  .container .app .s3 {
+    font-size: 25px;
+    margin-left: 40px;
+  }
+  .container .app .title {
+    margin: 10px 0;
+  }
+  .container .app .prayer-times .location {
+    margin: 10px 0 5px;
+    font-size: 15px;
+  }
+  .container .app .prayer-times .prayer {
+    margin-bottom: 5px;
+  }
+  .container .app .prayer-times .date {
+    margin-bottom: 5px;
+  }
+  .container .app .image img {
+    width: 150px;
+  }
+}
+@media (max-width: 380px) {
+  .container .app .s1 {
+    font-size: 20px;
+  }
+  .container .app .s2 {
+    font-size: 30px;
+  }
+  .container .app .s3 {
+    font-size: 20px;
+    margin-left: 30px;
+  }
+  .container .app .title {
+    margin: 10px 0;
+  }
+  .container .app .prayer-times .location {
+    margin: 10px 0 5px;
+    font-size: 15px;
+  }
+  .container .app .prayer-times .prayer {
+    margin-bottom: 5px;
+  }
+  .container .app .prayer-times .date {
+    margin-bottom: 5px;
+  }
+  .container .app .image img {
+    display: none;
+  }
+}

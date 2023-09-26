@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Prayer Times</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="all.min.css">
+</head>
+<body>
+  <div class="container">
+    <div class="app">
+      <div class="header">
+        <div class="title">
+          <span class="s1">Muslim</span>
+          <span class="s2">Prayer</span>
+          <span class="s3">Times</span>
+        </div>
+        <div class="image">
+          <img src="Prayer Times.png" alt="">
+        </div>
+      </div>
+      <input type="text" class="country-input" placeholder="add county">
+      <input type="text" class="city-input" placeholder="add city">
+      <button>Search</button>
+      <div class="prayer-times">
+        <h2 class="location">
+          <i class="fa-solid fa-map-pin"></i> 
+          <span>Prayer Times</span>
+          <span>for</span>
+          <span class="city"></span>
+        </h2>
+        <div class="date"></div>
+        <div class="prayer">
+          <h3>Fajr</h3>
+          <p class="F-time"></p>
+        </div>
+        <div class="prayer">
+          <h3>Dhuhr</h3>
+          <p class="D-time"></p>
+        </div>
+        <div class="prayer">
+          <h3>Asr</h3>
+          <p class="A-time"></p>
+        </div>
+        <div class="prayer">
+          <h3>Maghrib</h3>
+          <p class="M-time"></p>
+        </div>
+        <div class="prayer">
+          <h3>Isha</h3>
+          <p class="I-time"></p>
+        </div>
+    </div>
+  </div>
+  <script src="app.js"></script>
+</body>
+</html>
